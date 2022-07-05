@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val listView = findViewById<ListView>(R.id.listLView)
-        val names = arrayOf("DeadLift", "Squats", "Ohp")
+        val names = arrayOf("DeadLift", "Squats", "OHP", "Bench")
         val arrayAdapter :ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, names)
         listView.adapter = arrayAdapter
         val intent: Intent = Intent(this, EditExercise::class.java)
